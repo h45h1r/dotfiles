@@ -1,3 +1,0 @@
-#!/bin/bash
-cd Desktop
-gtk-launch  chrome-efmjfjelnicpmdcmfikempdhlmainjcb-Default.desktop 
