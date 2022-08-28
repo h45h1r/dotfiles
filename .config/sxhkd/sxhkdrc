@@ -1,0 +1,9 @@
+
+# SXHKD CONFIGURATION FILE
+
+# WM independant keybindings
+super + r
+	chromium
+
+super + F12
+	powermenu_t3

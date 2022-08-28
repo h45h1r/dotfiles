@@ -1,0 +1,54 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+import:
+- ~/.config/alacritty/colors.yml
+
+## window settings
+window:
+  opacity: 1.0
+  padding:
+    x: 15
+    y: 15 
+  title: Alacritty    
+  # Class (window name)
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+# Font configuration
+font:
+  normal:
+    family: Roboto Mono
+    style: Regular
+  bold:
+    family: Roboto Mono
+    style: Bold
+  italic:
+    family: Roboto Mono 
+    style: Italic
+  bold_italic:
+    family: Roboto Mono 
+    style: Bold Italic
+
+  size: 14
+
+# Scrolling
+scrolling:
+  history: 10000
+  multiplier: 3  
+
+selection:
+  save_to_clipboard: true
+
+shell:
+  program: /usr/bin/zsh
+
+# Mouse config
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: true
+
+# General config
+live_config_reload: true
+draw_bold_text_with_bright_colors: true  
