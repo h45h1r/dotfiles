@@ -1,0 +1,4 @@
+#!/bin/bash
+bluetoothctl power on
+bluetoothctl connect 74:45:CE:67:18:0F
+notify-send 'headphones connected'

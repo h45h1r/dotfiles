@@ -1,0 +1,2 @@
+#!/bin/bash
+chromium --new-window https://reddit.com/

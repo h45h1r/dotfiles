@@ -1,0 +1,29 @@
+#!/bin/bash
+# old blue color for clock #96CDFB and #83bae8
+clock() {
+  printf "^c#080808^^b#64c6d1^  "
+  printf "^c#080808^^b#79e6f3^ $(date +"%r")"
+}
+
+net_traffic() {
+  printf "^c#383838^^b#080808^ $(bar_net)"
+}
+
+ram() {
+  printf "^c#383838^^b#080808^  "
+  printf "^c#383838^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
+}
+
+cpu() {
+  cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
+  printf "^c#383838^ CPU"
+  printf "^c#383838^ $cpu_val"
+}
+
+
+while true; do 
+  
+  xsetroot -name " $(net_traffic) $(cpu) $(ram)  $(clock) " 
+  sleep 1
+
+done

@@ -1,0 +1,2 @@
+#!/bin/bash
+i3lock -k -e -f --{time,date,layout,verif,wrong,greeter}-font=JetBrainsMono Nerd Font   --time-size=110 --date-size=23  --ind-pos="920:810" --time-pos="920:350" --date-pos="920:410" --radius 60 --{layout,time,date,greeter}-color=ffffff -c 101012 --time-str="%I:%M" --date-str="%A, %B %d" --verif-text=" " --wrong-text=" "

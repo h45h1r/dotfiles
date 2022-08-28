@@ -1,0 +1,12 @@
+#!/bin/bash
+bluetoothctl power on 
+bluetoothctl remove 74:45:CE:67:18:0F
+bluetoothctl agent on 
+bluetoothctl default-agent
+bluetoothctl scan on 
+sleep 1 
+bluetoothctl scan off
+bluetoothctl trust 74:45:CE:67:18:0F
+bluetoothctl pair 74:45:CE:67:18:0F
+sleep 1
+bluetoothctl connect 74:45:CE:67:18:0F

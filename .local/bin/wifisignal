@@ -1,0 +1,2 @@
+#!/bin/bash
+watch -t 'p=$(iwconfig|grep Quality 2>/dev/null|cut -d= -f2|cut -d/ -f1); n=$(($p/5));echo -n Wireless quality: [;for i in $(seq $n); do echo -n \|; done; for i in $(seq $((20-$n))); do echo -n \ ;done;echo "] ($p%)"'
