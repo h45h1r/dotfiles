@@ -1,5 +1,5 @@
 #!/bin/bash
-# old blue color for clock #96CDFB,b#64c6d1 and #83bae8,b#79e6f3
+# brighter blue color for clock b#64c6d1 and b#79e6f3
 clock() {
   printf "^c#080808^^#96CDFB^  "
   printf "^c#080808^^#83bae8^ $(date +"%r")"
