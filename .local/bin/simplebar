@@ -1,8 +1,8 @@
 #!/bin/bash
-# old blue color for clock #96CDFB and #83bae8
+# old blue color for clock #96CDFB,b#64c6d1 and #83bae8,b#79e6f3
 clock() {
-  printf "^c#080808^^b#64c6d1^  "
-  printf "^c#080808^^b#79e6f3^ $(date +"%r")"
+  printf "^c#080808^^#96CDFB^  "
+  printf "^c#080808^^#83bae8^ $(date +"%r")"
 }
 
 net_traffic() {
